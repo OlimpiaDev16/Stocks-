@@ -9,8 +9,8 @@ import Foundation
 
 struct Stock: Codable {
     let stocks: [StockItems]
-   
-    struct StockItems: Codable, Hashable {        
+    
+    struct StockItems: Codable, Hashable {
         let ticker: String
         let name: String
         let currency: String
@@ -25,6 +25,7 @@ protocol JSONServiceProtocol {
 }
 
 struct StockClientService: JSONServiceProtocol {
+    
     private let url = "https://storage.googleapis.com/cash-homework/cash-stocks-api/portfolio.json"
     private let urlSession: URLSession
     
@@ -35,7 +36,7 @@ struct StockClientService: JSONServiceProtocol {
     func fetchStocks(completion: @escaping (Result<Stock, Error>) -> Void) {
         guard let url = URL(string: url) else { return }
         
-        urlSession.dataTask(with: url) { data, response, error in
+        urlSession.dataTask(with: url) { data, _, error in
             if let error = error {
                 completion(.failure(error))
             }
