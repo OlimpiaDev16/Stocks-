@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var stocks = StockViewModel()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            ForEach(stocks.stock, id: \.self) { stock in
+                Text(stock.name)
+            }
         }
         .padding()
     }
