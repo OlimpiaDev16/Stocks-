@@ -75,8 +75,7 @@ struct StockView: View {
                             .background(Color.green)
                             .cornerRadius(2.0)
                     } else {
-                        Image(systemName: "plus.circle.fill")
-                            .foregroundStyle(.green)
+                        EmptyView()
                 
                     }
                 }
