@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		12BED82F2C8B563F00D98579 /* Stocks_CashAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BED82E2C8B563F00D98579 /* Stocks_CashAppApp.swift */; };
-		12BED8312C8B563F00D98579 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BED8302C8B563F00D98579 /* ContentView.swift */; };
+		12BED8312C8B563F00D98579 /* StocksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BED8302C8B563F00D98579 /* StocksView.swift */; };
 		12BED8332C8B564200D98579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12BED8322C8B564200D98579 /* Assets.xcassets */; };
 		12BED8362C8B564200D98579 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12BED8352C8B564200D98579 /* Preview Assets.xcassets */; };
 		12BED8402C8B564200D98579 /* Stocks_CashAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BED83F2C8B564200D98579 /* Stocks_CashAppTests.swift */; };
@@ -38,7 +38,7 @@
 /* Begin PBXFileReference section */
 		12BED82B2C8B563F00D98579 /* Stocks.CashApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocks.CashApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12BED82E2C8B563F00D98579 /* Stocks_CashAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks_CashAppApp.swift; sourceTree = "<group>"; };
-		12BED8302C8B563F00D98579 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		12BED8302C8B563F00D98579 /* StocksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksView.swift; sourceTree = "<group>"; };
 		12BED8322C8B564200D98579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12BED8352C8B564200D98579 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		12BED83B2C8B564200D98579 /* Stocks.CashAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Stocks.CashAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				12BED82E2C8B563F00D98579 /* Stocks_CashAppApp.swift */,
-				12BED8302C8B563F00D98579 /* ContentView.swift */,
+				12BED8302C8B563F00D98579 /* StocksView.swift */,
 				12BED85A2C8B581500D98579 /* StocksService.swift */,
 				12BED85C2C8B5D4D00D98579 /* StocksViewModel.swift */,
 				12BED8322C8B564200D98579 /* Assets.xcassets */,
@@ -263,7 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12BED8312C8B563F00D98579 /* ContentView.swift in Sources */,
+				12BED8312C8B563F00D98579 /* StocksView.swift in Sources */,
 				12BED82F2C8B563F00D98579 /* Stocks_CashAppApp.swift in Sources */,
 				12BED85B2C8B581500D98579 /* StocksService.swift in Sources */,
 				12BED85D2C8B5D4D00D98579 /* StocksViewModel.swift in Sources */,

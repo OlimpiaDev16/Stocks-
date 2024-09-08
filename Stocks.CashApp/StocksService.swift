@@ -35,7 +35,6 @@ struct StockClientService: JSONServiceProtocol {
     
     func fetchStocks(completion: @escaping (Result<Stock, Error>) -> Void) {
         guard let url = URL(string: url) else { return }
-        
         urlSession.dataTask(with: url) { data, _, error in
             if let error = error {
                 completion(.failure(error))
