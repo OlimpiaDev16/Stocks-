@@ -17,8 +17,21 @@ struct StocksView: View {
         case .loading:
             ProgressView()
                 .onAppear(perform: viewModel.loadStocks)
-        case .failed(let error):
-            Text(error.localizedDescription)
+        case .badURL(let error):
+            Image(systemName: "exclamationmark.triangle")
+                .resizable()
+                .frame(width: 100, height: 100)
+            
+            Text("There was an error loading the Stocks")
+                .font(.callout)
+                .padding()
+            
+            Button("Retry") {
+                print(error.localizedDescription)
+                viewModel.loadStocks()
+            }
+            .font(.headline)
+            
         case .loaded(let stock):
             VStack(alignment: .leading) {
                 Text("Stocks")
@@ -45,6 +58,21 @@ struct StocksView: View {
                 }
                 .listStyle(.plain)
             }
+        case .emptyURL:
+            VStack {
+                Image(systemName: "exclamationmark.triangle.fill")
+                    .resizable()
+                    .frame(width: 180, height: 180)
+                    .foregroundColor(.red)
+                
+                Text("SORRY")
+                    .font(.largeTitle)
+                
+                Text("There are no stocks to display")
+                    .font(.title3)
+                
+            }
+            
         }
     }
 }
@@ -60,12 +88,12 @@ struct StockView: View {
     
     var body: some View {
         HStack {
-          VStack(alignment: .leading) {
+            VStack(alignment: .leading) {
                 HStack {
                     Text(ticket)
                         .font(.custom("Arial", fixedSize: 22))
                         .fontWeight(.bold)
-                 
+                    
                     if let quantity = quantity {
                         Text("\(quantity)")
                             .font(.custom("Arial", fixedSize: 16))
@@ -76,15 +104,15 @@ struct StockView: View {
                             .cornerRadius(2.0)
                     } else {
                         EmptyView()
-                
+                        
                     }
                 }
-              
+                
                 Text(name)
                     .font(.custom("Arial", fixedSize: 16))
                     .foregroundColor(Color.gray)
             }
-           
+            
             Spacer()
             
             VStack {
@@ -94,20 +122,20 @@ struct StockView: View {
                         .fontWeight(.bold)
                         .padding(.horizontal, 8)
                         .padding(.top, 8)
-                
+                    
                     Text("\(currency)")
                         .font(.custom("Arial", size: 12))
                         .padding(.horizontal, 8)
                         .padding(.bottom, 8)
-
+                    
                 }
                 .background(Color.pink)
                 .cornerRadius(3.0)
-               
+                
                 
                 let timeInterval = TimeInterval(timeStamp)
                 let date = Date(timeInterval: timeInterval, since: .init())
-              
+                
                 Text("\(date, format: .dateTime.day().month().year())")
                     .font(.custom("Arial", size: 12))
                     .fontWeight(.bold)

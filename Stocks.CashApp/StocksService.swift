@@ -7,6 +7,13 @@
 
 import Foundation
 
+enum NetworkError: Error {
+    case badURL
+    case noData
+    case decodingError
+    case APIError(String)
+}
+
 struct Stock: Codable {
     let stocks: [StockItems]
     
@@ -21,10 +28,10 @@ struct Stock: Codable {
 }
 
 protocol JSONServiceProtocol {
-    func fetchStocks(completion: @escaping (Result<Stock, Error>) -> Void)
+    func fetchStocks(completion: @escaping (Result<Stock, NetworkError>) -> Void)
 }
 
-struct StockClientService: JSONServiceProtocol {
+struct StockNetworkService: JSONServiceProtocol {
     
     private let url = "https://storage.googleapis.com/cash-homework/cash-stocks-api/portfolio.json"
     private let urlSession: URLSession
@@ -33,18 +40,18 @@ struct StockClientService: JSONServiceProtocol {
         self.urlSession = urlSession
     }
     
-    func fetchStocks(completion: @escaping (Result<Stock, Error>) -> Void) {
+    func fetchStocks(completion: @escaping (Result<Stock, NetworkError>) -> Void) {
         guard let url = URL(string: url) else { return }
-        urlSession.dataTask(with: url) { data, _, error in
+        urlSession.dataTask(with: url) { data, response, error in
             if let error = error {
-                completion(.failure(error))
+                completion(.failure(.badURL))
             }
             do {
                 guard let data = data else { return }
                 let stock = try JSONDecoder().decode(Stock.self, from: data)
                 completion(.success(stock))
-            } catch let error {
-                completion(.failure(error))
+            } catch {
+                completion(.failure(.decodingError))
             }
         }
         .resume()

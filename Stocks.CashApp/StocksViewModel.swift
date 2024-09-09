@@ -11,18 +11,19 @@ import SwiftUI
 // Make a note: Why main actor doesnt work here
 //@MainActor
 class StockViewModel: ObservableObject {
-  
+    
     enum State {
         case loading
-        case failed(Error)
         case loaded(Stock)
+        case badURL(Error)
+        case emptyURL
     }
     
-    @Published private(set) var state = State.loading
+    @Published var state = State.loading
+    @Published var stock: [Stock.StockItems] = []
     private let service: JSONServiceProtocol
-    var stock: [Stock.StockItems] = []
     
-    init(service: JSONServiceProtocol = StockClientService()) {
+    init(service: JSONServiceProtocol = StockNetworkService()) {
         self.service = service
     }
     
@@ -31,9 +32,13 @@ class StockViewModel: ObservableObject {
             DispatchQueue.main.async {
                 switch result {
                 case .success(let stock):
-                    self?.state = .loaded(stock)
+                    if stock.stocks.isEmpty {
+                        self?.state = .emptyURL
+                    } else {
+                        self?.state = .loaded(stock)                        
+                    }
                 case .failure(let error):
-                    self?.state = .failed(error)
+                    self?.state = .badURL(error)
                 }
             }
         }

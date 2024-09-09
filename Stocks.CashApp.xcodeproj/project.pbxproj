@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		123B29F92C8E91F700981598 /* StocksViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123B29F82C8E91F700981598 /* StocksViewModelTests.swift */; };
+		123B29FB2C8E965300981598 /* MockStocksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123B29FA2C8E965300981598 /* MockStocksService.swift */; };
+		12A033B92C8EB97E005F201C /* StocksResponse.json in Sources */ = {isa = PBXBuildFile; fileRef = 12A033B82C8EB97E005F201C /* StocksResponse.json */; };
+		12A033BA2C8F4D12005F201C /* StocksResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 12A033B82C8EB97E005F201C /* StocksResponse.json */; };
+		12A033BB2C8F4E0F005F201C /* StocksResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 12A033B82C8EB97E005F201C /* StocksResponse.json */; };
+		12A033BD2C8F849B005F201C /* StocksEmptyResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 12A033BC2C8F849B005F201C /* StocksEmptyResponse.json */; };
+		12A033BE2C8F849B005F201C /* StocksEmptyResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 12A033BC2C8F849B005F201C /* StocksEmptyResponse.json */; };
+		12A033C02C8F8686005F201C /* StocksMalformedResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 12A033BF2C8F8686005F201C /* StocksMalformedResponse.json */; };
+		12A033C12C8F8686005F201C /* StocksMalformedResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 12A033BF2C8F8686005F201C /* StocksMalformedResponse.json */; };
 		12BED82F2C8B563F00D98579 /* Stocks_CashAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BED82E2C8B563F00D98579 /* Stocks_CashAppApp.swift */; };
 		12BED8312C8B563F00D98579 /* StocksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BED8302C8B563F00D98579 /* StocksView.swift */; };
 		12BED8332C8B564200D98579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12BED8322C8B564200D98579 /* Assets.xcassets */; };
@@ -36,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		123B29F82C8E91F700981598 /* StocksViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksViewModelTests.swift; sourceTree = "<group>"; };
+		123B29FA2C8E965300981598 /* MockStocksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStocksService.swift; sourceTree = "<group>"; };
+		12A033B82C8EB97E005F201C /* StocksResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StocksResponse.json; sourceTree = "<group>"; };
+		12A033BC2C8F849B005F201C /* StocksEmptyResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StocksEmptyResponse.json; sourceTree = "<group>"; };
+		12A033BF2C8F8686005F201C /* StocksMalformedResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StocksMalformedResponse.json; sourceTree = "<group>"; };
 		12BED82B2C8B563F00D98579 /* Stocks.CashApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocks.CashApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12BED82E2C8B563F00D98579 /* Stocks_CashAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks_CashAppApp.swift; sourceTree = "<group>"; };
 		12BED8302C8B563F00D98579 /* StocksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksView.swift; sourceTree = "<group>"; };
@@ -119,7 +133,12 @@
 		12BED83E2C8B564200D98579 /* Stocks.CashAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				12A033B82C8EB97E005F201C /* StocksResponse.json */,
+				12A033BC2C8F849B005F201C /* StocksEmptyResponse.json */,
+				12A033BF2C8F8686005F201C /* StocksMalformedResponse.json */,
 				12BED83F2C8B564200D98579 /* Stocks_CashAppTests.swift */,
+				123B29F82C8E91F700981598 /* StocksViewModelTests.swift */,
+				123B29FA2C8E965300981598 /* MockStocksService.swift */,
 			);
 			path = Stocks.CashAppTests;
 			sourceTree = "<group>";
@@ -237,8 +256,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12A033BD2C8F849B005F201C /* StocksEmptyResponse.json in Resources */,
 				12BED8362C8B564200D98579 /* Preview Assets.xcassets in Resources */,
+				12A033C02C8F8686005F201C /* StocksMalformedResponse.json in Resources */,
 				12BED8332C8B564200D98579 /* Assets.xcassets in Resources */,
+				12A033BB2C8F4E0F005F201C /* StocksResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +268,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12A033BE2C8F849B005F201C /* StocksEmptyResponse.json in Resources */,
+				12A033C12C8F8686005F201C /* StocksMalformedResponse.json in Resources */,
+				12A033BA2C8F4D12005F201C /* StocksResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				123B29F92C8E91F700981598 /* StocksViewModelTests.swift in Sources */,
+				12A033B92C8EB97E005F201C /* StocksResponse.json in Sources */,
 				12BED8402C8B564200D98579 /* Stocks_CashAppTests.swift in Sources */,
+				123B29FB2C8E965300981598 /* MockStocksService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
