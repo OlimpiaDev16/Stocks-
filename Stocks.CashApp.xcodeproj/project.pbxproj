@@ -99,6 +99,39 @@
 			name = JSON;
 			sourceTree = "<group>";
 		};
+		12A033C32C8F96C5005F201C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				12BED82E2C8B563F00D98579 /* Stocks_CashAppApp.swift */,
+				12BED8322C8B564200D98579 /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		12A033C42C8F96DE005F201C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12BED8302C8B563F00D98579 /* StocksView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12A033C52C8F96E8005F201C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				12BED85A2C8B581500D98579 /* StocksService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		12A033C62C8F96F1005F201C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				12BED85C2C8B5D4D00D98579 /* StocksViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		12BED8222C8B563F00D98579 = {
 			isa = PBXGroup;
 			children = (
@@ -122,11 +155,10 @@
 		12BED82D2C8B563F00D98579 /* Stocks.CashApp */ = {
 			isa = PBXGroup;
 			children = (
-				12BED82E2C8B563F00D98579 /* Stocks_CashAppApp.swift */,
-				12BED8302C8B563F00D98579 /* StocksView.swift */,
-				12BED85A2C8B581500D98579 /* StocksService.swift */,
-				12BED85C2C8B5D4D00D98579 /* StocksViewModel.swift */,
-				12BED8322C8B564200D98579 /* Assets.xcassets */,
+				12A033C42C8F96DE005F201C /* View */,
+				12A033C52C8F96E8005F201C /* Model */,
+				12A033C62C8F96F1005F201C /* ViewModel */,
+				12A033C32C8F96C5005F201C /* Sources */,
 				12BED8342C8B564200D98579 /* Preview Content */,
 			);
 			path = Stocks.CashApp;
