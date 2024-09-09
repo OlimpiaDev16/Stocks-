@@ -41,10 +41,14 @@ I used the apple's stock app for UI inspiration. I liked the cleaness and how ea
 [link](https://support.apple.com/en-mo/guide/iphone/iph1ac0b1bc/ios)
 
 
-/var/folders/p5/s9hgny392rn19md4yhm10qdc0000gn/T/TemporaryItems/NSIRD_screencaptureui_I5xbaP/Screenshot 2024-09-09 at 4.22.54 PM.png
 
+### Articles of Interest
 
-### Articles 
+During the time I took to build this project I read some of the following articled to better informed my decisions making. 
+
+- A good refresher on view modifyers: [link](https://www.hackingwithswift.com/quick-start/swiftui/how-to-get-custom-colors-and-transparency-with-sf-symbols)
+- A good read on concurrency: [link](https://www.swiftbysundell.com/articles/the-main-actor-attribute/)
+- Architectures: [link](https://medium.com/@icodingwithmaliha/decoding-ios-architecture-mvp-vs-mvc-vs-mvvm-vs-viper-fafa2d986f61)
 
 
 
