@@ -89,6 +89,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12A033C22C8F943A005F201C /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				12A033B82C8EB97E005F201C /* StocksResponse.json */,
+				12A033BC2C8F849B005F201C /* StocksEmptyResponse.json */,
+				12A033BF2C8F8686005F201C /* StocksMalformedResponse.json */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
 		12BED8222C8B563F00D98579 = {
 			isa = PBXGroup;
 			children = (
@@ -133,12 +143,10 @@
 		12BED83E2C8B564200D98579 /* Stocks.CashAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				12A033B82C8EB97E005F201C /* StocksResponse.json */,
-				12A033BC2C8F849B005F201C /* StocksEmptyResponse.json */,
-				12A033BF2C8F8686005F201C /* StocksMalformedResponse.json */,
+				12A033C22C8F943A005F201C /* JSON */,
 				12BED83F2C8B564200D98579 /* Stocks_CashAppTests.swift */,
-				123B29F82C8E91F700981598 /* StocksViewModelTests.swift */,
 				123B29FA2C8E965300981598 /* MockStocksService.swift */,
+				123B29F82C8E91F700981598 /* StocksViewModelTests.swift */,
 			);
 			path = Stocks.CashAppTests;
 			sourceTree = "<group>";

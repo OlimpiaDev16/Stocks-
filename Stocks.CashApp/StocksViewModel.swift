@@ -8,8 +8,6 @@
 import Foundation
 import SwiftUI
 
-// Make a note: Why main actor doesnt work here
-//@MainActor
 class StockViewModel: ObservableObject {
     
     enum State {
