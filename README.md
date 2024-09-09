@@ -59,6 +59,13 @@ During the time I took to build this project I read some of the following articl
 - A good read on concurrency: [👩🏻‍💻](https://www.swiftbysundell.com/articles/the-main-actor-attribute/)
 - Architectures: [🏢](https://medium.com/@icodingwithmaliha/decoding-ios-architecture-mvp-vs-mvc-vs-mvvm-vs-viper-fafa2d986f61)
 
+## Notes from the candidate
+
+Overall I enjoyed building this proyect. I like a new canvas. 
+I started by deciding on architecture and creating a service. Second I created a view model followd by the view.
+ Something I would've liked to implet was support to test the network and the UI. I opted not to for time reasons. 
+Please reach out if you have ay questions. 
+
 
 
 
