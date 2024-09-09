@@ -36,25 +36,28 @@ After these steps you should see a screen displaying a simple list of stocks �
 Note: I debaded on whether or not includind these changes since most folders have only one file. Ultimatly I opted for `YES` as an organizatioal tactic. Overall makes it easier to read and find files
 
 
-## API - Endpoins 
+## Endpoins 
 
 The app makes use of the following endpoints:
-- Stocks enpoint used to populate or view [link](https://storage.googleapis.com/cash-homework/cash-stocks-api/portfolio.json)
-- Stocks enpoint to simulate an empty state: [link](https://storage.googleapis.com/cash-homework/cash-stocks-api/portfolio_empty.json)
-- Stocks enpoint to simulate a malformed URL: [link](https://storage.googleapis.com/cash-homework/cash-stocks-api/portfolio_malformed.json)
+- [Stocks enpoint used to populate or view](https://storage.googleapis.com/cash-homework/cash-stocks-api/portfolio.json)
+- [Stocks enpoint to simulate an empty state](https://storage.googleapis.com/cash-homework/cash-stocks-api/portfolio_empty.json)
+- [Stocks enpoint to simulate a malformed URL](https://storage.googleapis.com/cash-homework/cash-stocks-api/portfolio_malformed.json)
 
 ## UI Inspiration 
 
 I used the apple's stock app for UI inspiration. I liked the cleaness and how easy to understand it is. 
-[link](https://support.apple.com/en-mo/guide/iphone/iph1ac0b1bc/ios)
+[Apple stocks app](https://support.apple.com/en-mo/guide/iphone/iph1ac0b1bc/ios)
+
+<img width="241" alt="Screenshot 2024-09-09 at 5 01 02 PM" src="https://github.com/user-attachments/assets/d7cfb975-0f96-46db-8caf-4cbe68d9f540">
+
 
 ### Articles of Interest
 
 During the time I took to build this project I read some of the following articled to better informed my decisions making. 
 
-- A good refresher on view modifyers: [link](https://www.hackingwithswift.com/quick-start/swiftui/how-to-get-custom-colors-and-transparency-with-sf-symbols)
-- A good read on concurrency: [link](https://www.swiftbysundell.com/articles/the-main-actor-attribute/)
-- Architectures: [link](https://medium.com/@icodingwithmaliha/decoding-ios-architecture-mvp-vs-mvc-vs-mvvm-vs-viper-fafa2d986f61)
+- A good refresher on view modifyers: [🌁](https://www.hackingwithswift.com/quick-start/swiftui/how-to-get-custom-colors-and-transparency-with-sf-symbols)
+- A good read on concurrency: [👩🏻‍💻](https://www.swiftbysundell.com/articles/the-main-actor-attribute/)
+- Architectures: [🏢](https://medium.com/@icodingwithmaliha/decoding-ios-architecture-mvp-vs-mvc-vs-mvvm-vs-viper-fafa2d986f61)
 
 
 
